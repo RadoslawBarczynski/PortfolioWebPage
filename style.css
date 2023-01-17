@@ -28,6 +28,13 @@ header{
     z-index: 999;
 }
 
+@media only screen and (max-width:1320px) {
+    header{
+        padding: 20px 20px;
+        margin-top: 6%;
+    }
+}
+
 #menu li{
     list-style: none;
     display: inline-block;
@@ -47,6 +54,11 @@ section{
     position: relative;
 }
 
+@media only screen and (max-width:1320px) {
+    section{
+        height: 150vh;
+    }
+}
 /*home section*/
 
 .logo{
@@ -54,34 +66,63 @@ section{
     max-width: 100%;
 }
 
+@media only screen and (max-width:700px) {
+    .logo{
+        height: 70%;
+        width: 70%;
+    }
+}
+
 #home{
     background-image: linear-gradient(rgb(34, 34, 34) 55%, rgb(53, 53, 53) 100%);
+    overflow-x: hidden;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width:1320px) {
+    .wrapper{
+        flex-direction: column;
+    }
 }
 
 .thirdText{
-    position: absolute;
-    margin-top: 100px;
-    width: 600px;
+    min-width: 400px;
     display: flex;
+    flex-direction: column;
+    padding-right: 30%;
+}
+
+.thirdText .text{
+    position: relative;
 }
 
 .homeDescription{
-    position: absolute;
-    margin-top: 100px;
     font-weight: bold;
     font-size: 22px;
     color:white;
 }
 
 .homeGif{
-    position: absolute;
-    margin-top: 100px;
-    right: 5%;
-    top: 17%;
+    display: flex;
+    flex:1;
+    padding-right: 2%;
 }
+
 
 #home img{
     border-radius: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:1320px) {
+    .homeGif{
+        padding-right:0;
+    }
 }
 
 
@@ -99,11 +140,17 @@ section{
 .containter{
     min-height: 100vh;
     display: flex;
-    margin-left: 10%;
-    justify-content: left;
-    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding-left: 10%;
     gap:10px;
     overflow: hidden;
+}
+
+.animatedText{
+    text-align: left;
 }
 
 .containter .text{
@@ -117,6 +164,7 @@ section{
     color:black;
 
 }
+
 
 .text.sec-text:before{
     content: "";
@@ -171,19 +219,33 @@ section{
 }
 
 .rightSpan{
-    position:absolute;
-    right: 20%;
+    display: flex;
+    flex:1;
+    padding-right: 20%;
     font-size: 22px;
     overflow-wrap: break-word;
-    inline-size: 500px;
 }
 
 .leftSpan{
-    position:absolute;
-    left: 27%;
-    top: 35%;
+    display:flex;
+    flex:1;
+    justify-content:  center;
+    padding-bottom: 15%;
     font-size: 60px;
     font-weight: bold;
+}
+
+@media only screen and (max-width:1320px) {
+    .leftSpan{
+        font-weight: bold;
+        font-size:30px;
+    }
+}
+
+@media only screen and (max-width:1320px) {
+    .rightSpan{
+        font-size:16px;
+    }
 }
 
 /*projects section*/
@@ -200,6 +262,12 @@ section{
     font-size: 1rem;
     gap: 150px;
 }
+
+@media only screen and (max-width:1320px) {
+.projectsBody{
+    flex-direction: column;
+    gap:40px;
+}}
 
 .containter2{
     display: flex;
@@ -287,17 +355,89 @@ section{
     transform: translateY(0);
 }
 
-/*pricing section*/
-
-#pricing{
-    background-image: linear-gradient(#254B62, #185074);
-}
 
 /*contact section*/
 
 #contact{
     background-image: linear-gradient(#2a5169, #0e3852);
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    border: none;
+    border-radius: 15px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input, textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left:0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media(max-width: 991px){
+    #contact{
+        padding: 50px;
+    }
+    .contactForm{
+        width:100%;
+    }
+}
+
 
 /*all headers*/
 

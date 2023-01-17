@@ -20,20 +20,21 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </header>
-        <div class="homeGif">
-            <a class="logos"><img src="pngs/MyPixelArtwt.gif" alt=""></a>
-        </div>
+        <div class="wrapper">
         <div class="containter">
+            <div class="animatedText">
             <span class="text first-text">I'm a </span>
             <span class="text sec-text"> Freelancer</span>
+        </div>
             <div class="thirdText">
             <span class="name">Radosław Barczyński</span>
             <span class="homeDescription">I'm also a simple guy passionate about game development and websites, like to give projects a part of myself.</span>
         </div>
         </div>
         <div class="homeGif">
-            <a class="logo"><img src="pngs/MyPixelArtwt.gif" alt=""></a>
+            <a class="logos"><img src="pngs/MyPixelArtwt.gif" alt=""></a>
         </div>
+    </div>
     </section>
     <section id="about"><h1></h1>
         <div class="aboutMeDiv">
@@ -44,8 +45,8 @@
             </span>
         <ul id="socials">
             <li><a href="https://github.com/RadoslawBarczynski" class="fa fa-github"></a></li>
-            <li><a href="#twitter" class="fa fa-twitter"></a></li>
-            <li><a href="#instagram" class="fa fa-instagram"></a></li>
+            <li><a href="https://twitter.com/HeavenVosh" class="fa fa-twitter"></a></li>
+            <li><a href="https://www.instagram.com/radziula_barczynski" class="fa fa-instagram"></a></li>
             <li><a href="#linkedin" class="fa fa-linkedin"></a></li>
         </ul>
     </div>
@@ -60,7 +61,7 @@
             </div>
             <div class="face2">
                 <div class="content">
-                    Ty no nie wiem jak tam twoja szmaciura jebana zrogowaciała co sie kurwi pod mostem za wojaka
+                    Single-player card game with an isometric view of the game board. The main objective is to eliminate all opponents on the board using your own deck. (Game in progress)
                     <div class="button"><a href="https://github.com/RadoslawBarczynski/IsometricGame">Source</a></div>
                 </div>
             </div>
@@ -74,7 +75,7 @@
             </div>
             <div class="face2">
                 <div class="content">
-                    Ty no nie wiem jak tam twoja szmaciura jebana zrogowaciała co sie kurwi pod mostem za wojaka
+                    A first-person singleplayer action game set in the nightmarish location of an old abandoned hospital. (Game in progress)
                     <div class="button"><a href="https://github.com/RadoslawBarczynski/SilentAlley3D_FPP">Source</a></div>
                 </div>
             </div>
@@ -88,7 +89,7 @@
             </div>
             <div class="face2">
                 <div class="content">
-                    Ty no nie wiem jak tam twoja szmaciura jebana zrogowaciała co sie kurwi pod mostem za wojaka
+                    Simple pharmacy website design using spring+thymleaf+spring security
                     <div class="button"><a href="https://github.com/RadoslawBarczynski/Apteka_Spring-Thymleaf">Source</a></div>
                 </div>
             </div>
@@ -96,7 +97,29 @@
         </div>
     </div>
     </section>
-    <section id="contact"><h1>Contact Me</h1></section>
+    <section id="contact">
+        <div class="contactForm">
+        <form action="https://formspree.io/f/xjvdkwdz"
+        method="POST">
+            <h2>Send Message</h2>
+            <div class="inputBox">
+                <input type="text" name="Name" required="required">
+                <span>Full Name</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="Email" required="required">
+                <span>Email</span>
+            </div>
+            <div class="inputBox">
+                <textarea required="required" name="Message"></textarea>
+                <span>Type your message</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" name="" value="Send">
+            </div>
+        </form>
+    </div>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>
