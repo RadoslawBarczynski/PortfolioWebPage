@@ -112,6 +112,11 @@ section{
     padding-right: 2%;
 }
 
+.logos{
+    border-radius: 30px;
+    box-shadow: 25px 19px 28px 1px rgba(28, 28, 29, 1);
+}
+
 
 #home img{
     border-radius: 30px;
@@ -133,6 +138,7 @@ section{
     background: -webkit-linear-gradient(0deg, rgba(34,193,195,1) 0%, rgb(245, 189, 68) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 4px 4px 35px rgb(0, 0, 0);
 }
 
 
@@ -233,6 +239,7 @@ section{
     padding-bottom: 15%;
     font-size: 60px;
     font-weight: bold;
+    text-shadow: 4px 4px 35px rgb(0, 0, 0);
 }
 
 @media only screen and (max-width:1320px) {
@@ -448,6 +455,7 @@ figure > img {
     background: #fff;
     border: none;
     border-radius: 15px;
+    box-shadow: 25px 19px 28px 1px rgba(28, 28, 29, 1);
 }
 
 .contactForm h2{
